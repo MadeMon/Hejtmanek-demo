@@ -1,0 +1,18 @@
+{
+  "feature_file": "test.feature",
+  "helm_dir": "helm",
+  "values_combinations": [
+    {
+      "values": {
+        "service":{"appPort": 80}
+      },
+      "expected_result": "success"
+    },
+    {
+      "values": {
+        "service":{"appPort": 123}
+      },
+      "expected_result": "failure"
+    }
+  ]
+}
